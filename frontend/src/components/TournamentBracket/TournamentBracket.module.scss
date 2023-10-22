@@ -1,0 +1,62 @@
+.tournamentBracket {
+    background-color: #fff;
+    padding: 20px;
+
+    &__inner {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+    }
+}
+
+.match {
+    display: flex;
+    align-items: center;
+    max-height: 40px;
+
+    &__left {
+        border-radius: 7px 0px 0px 7px;
+        background: #f6f7f8;
+        padding: 8px 23px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        p {
+            color: #141414;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 24px;
+        }
+    }
+
+    &__right {
+        border-radius: 0px 7px 7px 0px;
+        background: #ffdd2d;
+        padding: 8px 23px;
+        height: 100%;
+        color: #141414;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+}
+
+.event {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.stage {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.stage2 {
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+}

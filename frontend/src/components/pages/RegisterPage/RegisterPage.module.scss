@@ -1,0 +1,141 @@
+.auth {
+    background: #f6f7f8;
+    padding-top: 235px;
+    padding-bottom: 318px;
+    background-image: url("../../../assets/images/logoBack.svg");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__inner {
+        border-radius: 11px;
+        background: #fff;
+        padding: 40px 104px;
+
+        h2 {
+            color: #141414;
+            font-family: "Tinkoff Sans Medium", sans-serif;
+            font-size: 32px;
+            font-weight: 500;
+            line-height: 24px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        input {
+            width: 536px;
+            border-radius: 7px;
+            background: #ecf1f7;
+            padding: 16px 15px;
+            outline: none;
+            border: 0;
+            color: #6c6f71;
+            font-family: "Roboto", sans-serif;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 24px;
+        }
+    }
+
+    &__bottom {
+        margin-top: 20px;
+        border-top: 1px solid #eaecee;
+        padding-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        button {
+            padding: 16px 35px;
+            border-radius: 7px;
+            background: #ffdd2d;
+            cursor: pointer;
+            border: 0;
+            color: #141414;
+            font-family: "Roboto", sans-serif;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 24px;
+        }
+
+        a {
+            padding: 9px 0 7px 0;
+            background-color: #fff;
+            color: #336fee;
+            font-family: "Roboto", sans-serif;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 24px;
+            text-decoration: none;
+        }
+    }
+
+    &__bottomAuth {
+        border: 0;
+        padding-top: 0;
+    }
+
+    &__warning {
+        padding-top: 5px;
+        text-align: center;
+        color: red;
+    }
+
+    @media screen and (max-width: 768px) {
+        &__form {
+            input {
+                width: 100%;
+            }
+        }
+
+        &__inner {
+            padding: 35px 60px;
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        padding-top: 190px;
+        padding-bottom: 190px;
+
+        &__form {
+            input {
+                width: 100%;
+            }
+        }
+
+        &__inner {
+            padding: 35px 30px;
+            margin: 0 15px;
+        }
+
+        &__inner h2 {
+            font-size: 26px;
+        }
+
+        &__bottom {
+            gap: 20px;
+            justify-content: center;
+        }
+
+        &__bottom a {
+            font-size: 14px;
+        }
+
+        &__bottom button {
+            padding: 10px 25px;
+        }
+
+        &__warning {
+            font-size: 13px;
+        }
+    }
+}

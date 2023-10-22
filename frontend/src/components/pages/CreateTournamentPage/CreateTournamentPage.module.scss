@@ -1,0 +1,192 @@
+.createTournament {
+    background: #f6f7f8;
+    &__inner {
+        padding-top: 24px;
+        padding-bottom: 300px;
+        h2 {
+            color: rgba(25, 28, 48, 0.9);
+            font-family: "Tinkoff Sans Medium";
+            font-size: 36px;
+            font-weight: 500;
+            margin-bottom: 24px;
+        }
+    }
+
+    &__form {
+        border-radius: 10px;
+        background: #fff;
+        padding: 20px;
+
+        h5 {
+            margin-bottom: 20px;
+            color: #6c6f71;
+            font-family: "Roboto", sans-serif;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 24px;
+        }
+
+        input {
+            border-radius: 7px;
+            background: #ecf1f7;
+            padding: 16px 15px;
+            color: #6c6f71;
+            font-family: "Roboto", sans-serif;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 24px;
+            outline: none;
+            border: 0;
+            width: 570px;
+        }
+    }
+
+    &__main {
+        margin-bottom: 20px;
+    }
+
+    &__mainContent {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__photo {
+        display: flex;
+        gap: 21px;
+        align-items: center;
+
+        img {
+            height: 129px;
+            border-radius: 4.7px;
+            object-fit: cover;
+            background-color: #d9d9d9;
+            border-radius: 100%;
+            width: 125px;
+        }
+    }
+
+    &__photoBtns {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        span {
+            padding: 10px 15px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        span:first-child {
+            border-radius: 7px;
+            background: #f6f7f8;
+            color: #141414;
+            font-family: "Roboto", sans-serif;
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 24px;
+        }
+
+        span:last-child {
+            border-radius: 7px;
+            background: rgba(221, 76, 30, 0.1);
+            color: #dd4c1e;
+            font-family: "Roboto", sans-serif;
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 24px;
+        }
+    }
+
+    &__warning {
+        padding-top: 5px;
+        padding-left: 5px;
+        color: red;
+        font-size: 15px;
+    }
+
+    &__dop {
+        margin-bottom: 30px;
+    }
+
+    &__dopContent {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__structureContent {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
+
+    &__bottom {
+        button {
+            border-radius: 7px;
+            background: #ffdd2d;
+            padding: 16px 25px;
+            border: 0;
+            cursor: pointer;
+            color: #141414;
+            text-align: right;
+            font-family: "Roboto", sans-serif;
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 24px;
+        }
+    }
+
+    &__dopBottom {
+        margin-top: 20px;
+
+        input {
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 1230px) {
+        &__mainContent {
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        &__dopContent {
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        &__structureContent {
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        &__form {
+            input {
+                width: 100%;
+                min-width: 300px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        &__photo {
+            flex-direction: column;
+        }
+
+        &__photoBtns {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        &__form {
+            padding: 20px 10px;
+        }
+
+        &__inner {
+            padding-bottom: 90px;
+        }
+
+        &__inner h2 {
+            font-size: 26px;
+        }
+    }
+}
