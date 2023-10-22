@@ -9,3 +9,6 @@
 Ссылка на сайт: https://dev.darksecrets.ru/
 Ссылка на swagger: https://dev.darksecrets.ru/api/v3/swagger-ui/index.html
 Ссылка, с данными, которую нужно вставить в поисковую строку swagger: https://dev.darksecrets.ru/api//v3/api-docs/  (После тяжелейшей борьбы с соединением Spring security и Swagger получилось только так)
+
+ERP диаграмма базы данных 
+![IMG_20231022_131243_251](https://github.com/DENisProd/B00K-C0MPVNI-HACK/assets/63392847/7473d39f-09c9-4d7e-86ff-cfb3aa85919e)
