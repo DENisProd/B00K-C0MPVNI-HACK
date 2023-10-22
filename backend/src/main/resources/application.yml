@@ -1,0 +1,35 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://127.0.0.1:5432/bk
+    username: 'postgres'
+    password: 'admin'
+
+    hikari:
+      auto-commit: false
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: 'true'
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+
+
+
+server:
+  port: 9000
+
+mysecrets:
+  app:
+    jwtSecret: MySecretsSecretKey
+    jwtExpirationMs: 86400000
+
+
+springdoc:
+  swagger-ui:
+    disable-swagger-default-url: true
+    path: /v3/swagger-ui.html
+    config-url: /api/v3/api-docs/swagger-config
+  api-docs:
+    path: /v3/api-docs
